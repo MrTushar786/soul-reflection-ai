@@ -203,7 +203,14 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
                   <CardDescription className="text-base mb-4">
                     {insight.description}
                   </CardDescription>
-                  <Button variant="calm" size="sm">
+                  <Button 
+                    variant="calm" 
+                    size="sm"
+                    onClick={() => {
+                      // Handle insight action clicks
+                      console.log(`Clicked: ${insight.action}`);
+                    }}
+                  >
                     {insight.action}
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
