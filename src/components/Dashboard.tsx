@@ -206,13 +206,16 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
                   <Button 
                     variant="calm" 
                     size="sm"
+                    className="hover:scale-105 transition-all duration-200 cursor-pointer"
                     onClick={() => {
                       // Handle insight action clicks
                       console.log(`Clicked: ${insight.action}`);
+                      // Add visual feedback
+                      alert(`${insight.action} clicked!`);
                     }}
                   >
                     {insight.action}
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
               </Card>
