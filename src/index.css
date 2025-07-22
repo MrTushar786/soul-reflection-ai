@@ -8,35 +8,62 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* MindMirror Design System - Calming & Therapeutic */
+    --background: 216 28% 98%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Calming blue-green primary */
+    --primary: 195 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 195 65% 55%;
+    --primary-glow: 195 85% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft therapeutic secondary */
+    --secondary: 150 25% 88%;
+    --secondary-foreground: 150 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Gentle muted tones */
+    --muted: 210 25% 94%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm accent for growth */
+    --accent: 45 90% 75%;
+    --accent-foreground: 45 85% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Gentle warning colors */
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Therapeutic success */
+    --success: 150 60% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Calming borders */
+    --border: 215 20% 90%;
+    --input: 215 20% 92%;
+    --ring: 195 85% 45%;
+
+    --radius: 1rem;
+
+    /* Gradients for calming effects */
+    --gradient-calm: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.2));
+    --gradient-healing: linear-gradient(180deg, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+    --gradient-growth: linear-gradient(45deg, hsl(var(--success) / 0.1), hsl(var(--accent) / 0.1));
+    
+    /* Therapeutic shadows */
+    --shadow-gentle: 0 4px 20px hsl(var(--primary) / 0.08);
+    --shadow-floating: 0 8px 32px hsl(var(--primary) / 0.12);
+    --shadow-glow: 0 0 24px hsl(var(--primary-glow) / 0.2);
+
+    /* Smooth transitions */
+    --transition-calm: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-gentle: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
