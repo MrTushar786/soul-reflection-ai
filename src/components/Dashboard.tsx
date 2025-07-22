@@ -211,7 +211,7 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
                       if (insight.action === "Explore Pattern") {
                         onNavigate("mood-tracker");
                       } else if (insight.action === "View Progress") {
-                        onNavigate("mood-tracker");
+                        onNavigate("journal");
                       }
                     }}
                   >
