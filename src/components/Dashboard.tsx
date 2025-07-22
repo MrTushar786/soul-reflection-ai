@@ -208,10 +208,11 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
                     size="sm"
                     className="hover:scale-105 transition-all duration-200 cursor-pointer"
                     onClick={() => {
-                      // Handle insight action clicks
-                      console.log(`Clicked: ${insight.action}`);
-                      // Add visual feedback
-                      alert(`${insight.action} clicked!`);
+                      if (insight.action === "Explore Pattern") {
+                        onNavigate("mood-tracker");
+                      } else if (insight.action === "View Progress") {
+                        onNavigate("mood-tracker");
+                      }
                     }}
                   >
                     {insight.action}
